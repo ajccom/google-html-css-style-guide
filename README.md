@@ -1,4 +1,4 @@
-#Google HTML/CSS 风格指南#
+# Google HTML/CSS 风格指南
 
 版本：0.2
 
@@ -8,13 +8,13 @@
 
 译文状态：草稿
 
-##前言##
+## 前言
 
 本文定义了 HTML 和 CSS 的格式和样式规则，旨在改善代码协作编码、代码质量和规范基本结构。它适用于使用 HTML 和 CSS 的源文件，也包括 GSS 文件。该文档可免费用于混淆、压缩和编译代码的工具，同时保持通用代码质量。
 
-##通用样式规则##
+## 通用样式规则
 
-###协议###
+### 协议
 
 **省略嵌入资源的协议**
 
@@ -33,9 +33,9 @@
       background: url(http://www.google.com/images/example);
     }
     
-##通用格式化规则##
+## 通用格式化规则
 
-###缩进###
+### 缩进
 
 **使用两个空格**
       
@@ -49,7 +49,7 @@
       color: blue;
     }
 
-###大小写###
+### 大小写
 
 **只使用小写**
 
@@ -61,7 +61,7 @@
     <!-- 推荐 -->
     <img src="google.png" alt="Google">
 
-###尾部空格###
+### 尾部空格
 
 **删除多余的尾部空格**
 
@@ -73,9 +73,9 @@
     <!-- 推荐 -->
     <p>Yes please.
 
-##通用 Meta 规则##
+## 通用 Meta 规则
 
-###编码###
+### 编码
 
 **使用 UTF-8 (no BOM) 编码**
 
@@ -85,7 +85,7 @@
 
 （更多编码和指定方式的资料可以参见[Character Sets & Encodings in XHTML, HTML and CSS](http://www.w3.org/International/tutorials/tutorial-char-enc/en/all.html)）
 
-###注释###
+### 注释
 
 **根据需要，给代码做注释**
 
@@ -93,7 +93,7 @@
 
 （注释代码不是强制要求，视乎项目性质和复杂程度）
 
-###待办事项###
+### 待办事项
 
 **使用 `TODO` 关键词标识待办事项**
 
@@ -111,9 +111,9 @@
       <li>Oranges</li>
     </ul>
 
-##HTML 风格规则##
+## HTML 风格规则
 
-###文档类型###
+### 文档类型
 
 **使用 HTML5**
 
@@ -123,7 +123,7 @@ HTML5 推荐所有 HTML 文档使用 `<!DOCTYPE html>`。
 
 不要闭合空标签，例如：要 `<br>`，而非 `<br />`，尽管对于 HTML 两者都可以。
 
-###HTML 校验###
+### HTML 校验
 
 **使用经校验的 HTML 代码**
 
@@ -143,7 +143,7 @@ HTML 代码有效性是重要的质量衡量标准，并可确保 HTML 代码可
     <title>Test</title>
     <article>This is only a test.</article>
 
-###语义化###
+### 语义化
 
 **使用 HTML 要符合语义**
 
@@ -157,7 +157,7 @@ HTML 代码有效性是重要的质量衡量标准，并可确保 HTML 代码可
     <!-- 推荐 -->
     <a href="recommendations/">All recommendations</a>
 
-###多媒体备选内容###
+### 多媒体备选内容
 
 **为多媒体提供备选内容**
 
@@ -173,7 +173,7 @@ HTML 代码有效性是重要的质量衡量标准，并可确保 HTML 代码可
     <!-- 推荐 -->
     <img src="spreadsheet.png" alt="Spreadsheet screenshot.">
 
-###关注点分离###
+### 关注点分离
 
 **行为、呈现与结构分离**
 
@@ -205,7 +205,7 @@ In addition, keep the contact area as small as possible by linking as few style 
     <p>I’ve read about this on a few sites but today I’m actually doing it: separating concerns and avoiding anything in the HTML of my website that is presentational.
     <p>It’s awesome!
 
-###转义符###
+### 转义符
 
 **不要使用转义符**
 
@@ -219,7 +219,7 @@ In addition, keep the contact area as small as possible by linking as few style 
     <!-- 推荐 -->
     The currency symbol for the Euro is “€”.
 
-###可选标签###
+### 可选标签
 
 **省略可选标签（可选）**
 
@@ -244,7 +244,7 @@ In addition, keep the contact area as small as possible by linking as few style 
     <title>Saving money, saving bytes</title>
     <p>Qed.
     
-###引用类型###
+### 引用类型
 
 **在 style 和 scitpt 标签中省略 `type` 属性**
 
@@ -266,13 +266,13 @@ HTML5 默认使用 [`text/css`](http://www.whatwg.org/specs/web-apps/current-wor
     <!-- 推荐 -->
     <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
 
-##HTML 代码格式规则##
+## HTML 代码格式规则
 
-##HTML Formatting Rules##
+## HTML Formatting Rules
 
-###格式###
+### 格式
 
-###General formatting###
+### General formatting
 
 **每个块元素、列表元素或表格元素都独占一行，每个子元素都相对于父元素进行缩进。**
       
@@ -309,7 +309,7 @@ Also, indent them if they are child elements of a block, list, or table element.
           <td>$ 4.50
     </table>
 
-###HTML quotation marks###
+### HTML quotation marks
       
 **Use double quotation marks for attribute values where necessary.**
       
@@ -320,11 +320,11 @@ When quoting attribute values, use double (`""`) rather than single quotation ma
     <!-- 推荐 -->
     <a class="maia-button maia-button-secondary">Sign in</a>
 
-##CSS 代码风格规则##
+## CSS 代码风格规则
 
-##CSS Style Rules##
+## CSS Style Rules
 
-###CSS 校验###
+### CSS 校验
 
 **尽量使用经过校验的 CSS 代码**
 
@@ -332,7 +332,7 @@ Unless dealing with CSS validator bugs or requiring proprietary syntax, use vali
 
 Use tools such as the [W3C CSS validator](http://jigsaw.w3.org/css-validator/) to test. Using valid CSS is a measurable baseline quality attribute that allows to spot CSS code that may not have any effect and can be removed, and that ensures proper CSS usage.
 
-###ID and class naming###
+### ID and class naming
 
 **Use meaningful or generic ID and class names.**
       
@@ -359,7 +359,7 @@ Using functional or generic names reduces the probability of unnecessary documen
     .aux {}
     .alt {}
     
-###ID and class name style###
+### ID and class name style
       
 **Use ID and class names that are as short as possible but as long as necessary.**
       
@@ -374,7 +374,7 @@ Using ID and class names this way contributes to acceptable levels of understand
     #nav {}
     .author {}
 
-###Type selectors###
+### Type selectors
       
 **Avoid qualifying ID and class names with type selectors.**
       
@@ -389,7 +389,7 @@ Avoiding unnecessary ancestor selectors is useful for [performance reasons](http
     #example {}
     .error {}
     
-###Shorthand properties###
+### Shorthand properties
       
 **Use shorthand properties where possible.**
       
@@ -411,7 +411,7 @@ Using shorthand properties is useful for code efficiency and understandability.
     font: 100%/1.6 palatino, georgia, serif;
     padding: 0 1em 2em;
     
-###0 and units###
+### 0 and units
       
 **Omit unit specification after “0” values.**
       
@@ -420,7 +420,7 @@ Do not use units after `0` values unless they are required.
     margin: 0;
     padding: 0;
     
-###Leading 0s###
+### Leading 0s
       
 **Omit leading “0”s in values.**
       
@@ -428,7 +428,7 @@ Do not use put `0`s in front of values or lengths between -1 and 1.
 
     font-size: .8em;
     
-###Hexadecimal notation###
+### Hexadecimal notation
       
 **Use 3 character hexadecimal notation where possible.**
       
@@ -439,7 +439,7 @@ For color values that permit it, 3 character hexadecimal notation is shorter and
     /* Recommended */
     color: #ebc;
     
-###Prefixes###
+### Prefixes
       
 **Prefix selectors with an application-specific prefix (optional).**
       
@@ -450,7 +450,7 @@ Using namespaces helps preventing naming conflicts and can make maintenance easi
     .adw-help {} /* AdWords */
     #maia-note {} /* Maia */
     
-###ID and class name delimiters###
+### ID and class name delimiters
       
 **Separate words in ID and class names by a hyphen.**
       
@@ -466,15 +466,15 @@ Do not concatenate words and abbreviations in selectors by any characters (inclu
     #video-id {}
     .ads-sample {}
     
-###Hacks###
+### Hacks
       
 **Avoid user agent detection as well as CSS “hacks”—try a different approach first.**
       
 It’s tempting to address styling differences over user agent detection or special CSS filters, workarounds, and hacks. Both approaches should be considered last resort in order to achieve and maintain an efficient and manageable code base. Put another way, giving detection and hacks a free pass will hurt projects in the long run as projects tend to take the way of least resistance. That is, allowing and making it easy to use detection and hacks means using detection and hacks more frequently—and more frequently is too frequently.
 
-##CSS Formatting Rules###
+## CSS Formatting Rules
 
-###Declaration order###
+### Declaration order
       
 **Alphabetize declarations.**
       
@@ -491,7 +491,7 @@ Ignore vendor-specific prefixes for sorting purposes. However, multiple vendor-s
     text-align: center;
     text-indent: 2em;
     
-###Block content indentation###
+### Block content indentation
       
 **Indent all block content.**
       
@@ -506,7 +506,7 @@ Indent all [block content](http://www.w3.org/TR/CSS21/syndata.html#block), that 
 
     }
     
-###Declaration stops###
+## Declaration stops
       
 **Use a semicolon after every declaration.**
       
@@ -523,7 +523,7 @@ End every declaration with a semicolon for consistency and extensibility reasons
       height: 100px;
     }
     
-###Property name stops###
+### Property name stops
       
 **Use a space after a property name’s colon.**
       
@@ -538,7 +538,7 @@ Always use a single space between property and value (but no space between prope
       font-weight: bold;
     }
     
-###Selector and declaration separation###
+### Selector and declaration separation
       
 **Separate selectors and declarations by new lines.**
       
@@ -556,7 +556,7 @@ Always start a new line for each selector and declaration.
       line-height: 1.2;
     }
     
-###Rule separation###
+### Rule separation
       
 **Separate rules by new lines.**
       
@@ -571,7 +571,7 @@ Always put a line between rules.
       width: 50%;
     }
     
-###CSS quotation marks###
+### CSS quotation marks
       
 **Use single quotation marks for attribute selectors and property values where necessary.**
       
@@ -590,9 +590,9 @@ When quoting attribute selectors and property values, use single (`''`) rather t
       font-family: 'open sans', arial, sans-serif;
     }
 
-##CSS Meta Rules##
+## CSS Meta Rules
 
-###Section comments###
+### Section comments
       
 **Group sections by a section comment (optional).**
       
@@ -611,7 +611,7 @@ If possible, group style sheet sections together by using comments. Separate sec
     .adw-gallery {}
 
 
-##PARTING_WORDS##
+## PARTING_WORDS
 
 **Be consistent.**
 
