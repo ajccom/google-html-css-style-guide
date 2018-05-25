@@ -183,8 +183,6 @@ HTML 代码有效性是重要的质量衡量标准，并可确保 HTML 代码可
 
 此外，尽量使脚本和样式表在文档与模板中有最小接触面积，即减少外链。
 
-In addition, keep the contact area as small as possible by linking as few style sheets and scripts as possible from documents and templates.
-
 将表现和行为分开维护是很重要的，因为要在 HTML 文档中更改样式和行为花费成本更高。
         
     <!-- 不推荐 -->
@@ -209,7 +207,7 @@ In addition, keep the contact area as small as possible by linking as few style 
 
 **不要使用转义符**
 
-不需要使用类似 `&amp;mdash;` 、 `&amp;rdquo;` 和 `&amp;#x263a;`等的转义符，假定团队之间所用的文件和编辑器是同一编码（UTF-8）。
+不需要使用类似 `&amp;mdash;` 、 `&amp;rdquo;` 和 `&amp;#x263a;` 等的转义符，假定团队之间所用的文件和编辑器是同一编码（UTF-8）。
 
 在 HTML 文档中具有特殊含义的字符（例如 `<` 和 `&` )为例外，还有 “不可见” 字符（例如 no-break 空格）。
 
@@ -248,7 +246,7 @@ In addition, keep the contact area as small as possible by linking as few style 
 
 **在 style 和 scitpt 标签中省略 `type` 属性**
 
-不要在 style 和 scitpt 标签中省略 `type` 属性（除非标签中引用的不是 CSS 或者 JavaScript），
+不要在 style 和 scitpt 标签中使用 `type` 属性（除非标签中引用的不是 CSS 或者 JavaScript），
 
 HTML5 默认使用 [`text/css`](http://www.whatwg.org/specs/web-apps/current-work/multipage/semantics.html#attr-style-type) 和 [`text/javascript`](http://www.whatwg.org/specs/web-apps/current-work/multipage/scripting-1.html#attr-script-type)，因此声明引用类型是不必要的，对于较老的浏览器也同样适用。
 
@@ -268,27 +266,15 @@ HTML5 默认使用 [`text/css`](http://www.whatwg.org/specs/web-apps/current-wor
 
 ## HTML 代码格式规则
 
-## HTML Formatting Rules
-
-### 格式
-
-### General formatting
+### 通用格式
 
 **每个块元素、列表元素或表格元素都独占一行，每个子元素都相对于父元素进行缩进。**
-      
-**Use a new line for every block, list, or table element, and indent every such child element.**
 
-独立元素的样式（as CSS allows elements to assume a different role per display property), 将块元素、列表元素或表格元素都放在新行。
-
-Independent of the styling of an element (as CSS allows elements to assume a different role per `display` property), put every block, list, or table element on a new line.
+独立元素的样式, 将块元素、列表元素或表格元素都放在新行。
 
 另外，需要缩进块元素、列表元素或表格元素的子元素。
 
-Also, indent them if they are child elements of a block, list, or table element.
-
-（如果出现了列表项左右空文本节点问题，可以试着将所有的 li 元素都放在一行。 A linter is encouraged to throw a warning instead of an error.)
-
-(If you run into issues around whitespace between list items it’s acceptable to put all `li` elements in one line. A linter is encouraged to throw a warning instead of an error.)
+（如果出现了列表项左右空文本节点问题，可以试着将所有的 li 元素都放在一行。 )
 
     <blockquote>
       <p><em>Space</em>, the final frontier.</p>
